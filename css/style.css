@@ -1,0 +1,40 @@
+.item-1,
+.item-2,
+.item-3 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    margin: 12px;
+}
+
+p {
+    vertical-align: middle;
+}
+
+.item-1 {
+    grid-area: sidebar;
+    background-color: #011638;
+    height: 500px;
+}
+
+.item-2 {
+    grid-area: header;
+    background-image: linear-gradient(to left, #9055a2, #2e294e)
+}
+
+.item-3 {
+    grid-area: footer;
+    background: url('../img/bg.jpg') center/cover no-repeat;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.grid-template-areas {
+    display: grid;
+    grid-template-areas: 
+    "sidebar header" 
+    "sidebar footer"
+    ;
+}
